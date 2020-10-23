@@ -1,0 +1,473 @@
+@font-face{
+font-family: "PT Sans Narrow";
+src: url(../Barber/fonts/web/ptsansnarrow.woff2) format("woff2"),
+        url(../Barber/fonts/web/ptsansnarrow.woff) format("woff2"),
+        local('PT Sans Narrow');
+
+font-weight: normal;
+}
+@font-face{
+font-family: "PT Sans Narrow";
+src: url(../Barber/fonts/web/ptsansnarrowbold.woff2) format("woff2"),
+        url(../Barber/fonts/web/ptsansnarrowbold.woff) format("woff2"),
+        local('PT Sans Narrow');
+font-weight:bold;
+}
+
+
+body{
+    
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+
+    background-color: black;
+    background-image: url(./Img/Index/backgroundBody.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.visually-hidden{
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+a{  font:inherit;
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    display: block;
+    
+
+    text-align: center;
+    font: inherit;
+    border: none;
+    border-radius: none;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+}
+                                                        /* header */
+.main-header{
+    margin: 0 auto;
+    background-color: black;
+    margin-bottom: 60px;
+
+}
+.main-navigation{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation-list{
+    max-width: 620px;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+}
+.main-navigation-item a{
+    display: block;
+    padding: 30px 20px;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    font: inherit;
+
+}
+
+.login-menu{
+    max-width: 280px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+.enter{
+    position: relative;
+}
+.enter::before{
+    position: absolute;
+    left: -10px;
+    content: url(./Icons/Index/login.svg);
+    opacity: 30%;
+   
+}
+.login-menu-item button{
+    padding: 30px 20px;
+}
+.enter:hover::before{
+opacity: 100%;
+cursor: pointer;
+}
+                                                        /* Advantages */
+.wrap-logo-advantages{
+ width:940px;
+ margin: 0 auto;
+ margin-bottom: 78px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+.main-logo{
+    margin-bottom: 40px;
+}
+.advantage-list{
+   width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+
+    list-style: none;
+}
+.advantage-item{
+    width: 300px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantage-item h2{
+    margin: 0;
+    margin-bottom: 60px;
+
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+}
+.advantage-item h2{
+    position: relative;
+}
+.advantage-item h2::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -10px;
+
+    transform: rotate(45deg);
+
+    background-color: ivory;
+
+}
+.advantage-item p{
+margin: 0;
+font-size: 14px;
+line-height: 24px;
+color: #f7f4f1;
+font-weight: 700;
+font-family: "PT Sans Narrow";
+text-align: center;
+}
+
+                                                            /* newsblock */
+                            
+                                                
+.content{
+    display: flex;
+    /* box-sizing: border-box; */
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding-top: 20px;
+    background-color: khaki;
+    background-image: url(./Img/Index/string.svg),
+    url(./Img/Index/backgroundNewsBlock.jpg);
+    background-position:center, 0 0;
+    background-repeat: no-repeat, repeat;
+
+    color: black;
+}
+
+.news-content{
+    width: 348px;
+    padding-top: 25px;
+    padding-bottom: 49px;
+    margin-left: 82px;
+    font:inherit;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+
+}
+.news-content h2{
+    margin: 0;
+    margin-bottom: 21px;
+    padding: 0;
+    font-size: 30px;
+}
+.news-content p{
+    margin: 0;
+    padding: 0;
+
+
+    line-height: 25px;
+    letter-spacing: 0.1px;
+}
+.news-content time{
+    display: block;
+    margin-bottom: 25px;
+    text-transform: lowercase;
+    font-size: 14px;
+}
+.news-text{
+    margin-bottom: 32px;
+}
+.news-content .button{
+    padding: 14px 0;
+    width: 140px;
+   
+    vertical-align: middle;
+}
+
+.foto-gallery{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    padding-top: 25px;
+    width: 300px;
+}
+.foto-gallery h2{
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 0;
+
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.foto-gallery figure{
+    margin: 0;
+    margin-bottom: 36px;
+    width: 285px;
+    height: 164px;
+    border: 8px solid white;
+    background-color: turquoise;
+}
+.buttons-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-wrap button{
+    width: 140px;
+    height: 44px;
+
+    font-size: 14px;
+}
+
+                                                    /* user-activity */
+.user-activity{
+display: flex;
+justify-content: space-between;
+width: 940px;
+margin: 0 auto;
+padding-top: 20px;
+padding-bottom: 50px;
+margin-bottom: 65px;
+background-color: khaki;
+background-image: url(./Img/Index/string.svg),
+url(./Img/Index/backgroundNewsBlock.jpg);
+background-position:center, 0 0;
+background-repeat: no-repeat, repeat;
+color: black;
+
+}
+.contact-info{
+width: 323px;
+margin-left: 81px;
+padding-top: 24px;
+}
+.contact-info h2{
+margin: 0;
+margin-bottom: 24px;
+
+font-size: 30px;
+}
+.contact-info p{
+margin: 0;
+padding: 0;
+
+font-size: 14px;
+line-height: 23px;
+}
+.contact-info p:nth-child(2){
+margin-bottom: 23px;
+}
+.contact-info-wrap{
+margin-bottom: 25px;
+}
+.buttons-wrap-contact{
+display: flex;
+justify-content: space-between;
+width: 300px;
+}
+.buttons-wrap-contact button{
+width: 140px;
+padding: 10px 0;
+
+font-size: 14px;
+}
+.appointment{
+width: 300px;
+margin-right: 77px;
+margin-top: 25px;
+}
+.appointment h2{
+margin: 0;
+margin-bottom: 25px;
+font-size: 30px;
+}
+.appointment p:first-of-type{
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1px;
+
+}
+.appointment form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.appointment input{
+    width: 140px;
+    height: 43px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 15px;
+   
+
+    border: 2px solid black;
+    background-color: inherit;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 14px;
+    color: #545454;
+}
+.input-wrap{
+    position: relative;
+}
+form label{
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    font-size: 14px;
+}
+.form-button{
+    width: 300px;
+    margin: 0;
+    padding: 13px 0;
+
+    font: inherit;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+.main-footer{
+ background-color: dimgray;
+ background-image: url(./Img/Index/backGroundFooter.jpg);
+ background-position: 0 0;
+ background-repeat: repeat;
+}
+.main-footer-wrap{
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 45px;
+    display: flex;
+    
+}
+.main-footer p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.conacts-footer{
+    width: 307px;
+    margin-right: 95px;
+}
+.social-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.footer-social-icon{
+    display: flex;
+  
+    width: 43px;
+    height: 43px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.footer-social-icon:hover{
+    background-color: white;
+
+}
+.social-item:hover path{
+    fill: black;
+}
+.footer-social{
+    width: 140px;
+    text-align: center;
+}
+.footer-copyright{
+    width: 140px;
+    margin-left: auto;
+    padding-top: 10px;
+
+
+    text-align: center;
+}
+.footer-copyright p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.footer-copyright a{
+    
+    font-size: 14px;
+    padding: 15px 0;
+}
+.disable{
+    display: none;
+}
