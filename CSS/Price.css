@@ -1,0 +1,372 @@
+
+@font-face{
+    font-family: "PT Sans Narrow";
+    src: url(../fonts/web/ptsansnarrow.woff) format('woff'),
+    url(../fonts/web/ptsansnarrow.woff2) format('woff2'),
+    local("PT Sans Narrow");
+    font-weight:normal ;
+}
+@font-face{
+    font-family: "PT Sans Narrow";
+    src: url(../fonts/web/ptsansnarrowbold.woff) format('woff'),
+    url(../fonts/web/ptsansnarrowbold.woff2) format('woff2'),
+    local("PT Sans Narrow");
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow";
+    font-size: 14px;
+    color:black;
+    text-transform: uppercase;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.a{
+    text-decoration: none;
+}
+                                                            /* Header */
+.main-header{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: black;
+}
+.main-header-container{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-navigation{
+    max-width: 700px;
+    padding-left: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+
+}
+.login-menu-wrap{
+    max-width: 230px;
+
+}
+
+.main-navigation-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.main-logo{
+    padding-top: 25px;
+    margin-right: 15px;
+}
+.main-navigation-list a{
+    display: block;
+    padding: 25px 20px;
+
+
+    text-decoration: none;
+    font: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.login-menu-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    
+
+}
+.login-menu-list a{
+    display: block;
+    padding: 25px 20px;
+
+
+    text-decoration: none;
+    font: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    color: white;
+}
+.enter{
+    position: relative;
+}
+.enter::before{
+    position: absolute;
+    content: url(../Icons/Price/login.svg);
+    top: 30px;
+    left: -10px;
+    opacity: 0.3;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-bottom: 75px;
+
+    background-color: lemonchiffon;
+    background-image: url(../Img/Price/Layer\ 24\ copy.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-container{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.navigation-tree-list{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+.navigation-tree-list li{
+    position: relative;
+    padding-right: 40px;
+}
+.navigation-tree-list li::before{
+    position: absolute;
+    content: '';
+
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(45deg);
+
+    top: 5px;
+    left: -25px;
+}
+.navigation-tree-list li:first-child::before{
+    content: none;
+}
+.navigation-tree-list a{
+
+    font: inherit;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.big-headling{
+    position: relative;
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.big-headling::before,
+.big-headling::after{
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 2px;
+
+    background-color: black;
+
+}
+.big-headling::after{
+    top:30px;
+    left: 0px;
+}
+.big-headling::before{
+    top:30px;
+    right: 0px;
+}
+.items-and-prices-wrap{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.facilities{
+    width: 240px;
+    padding-top: 15px;
+}
+.facilities h3{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+.facilities-list{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+
+    list-style: none;
+    font-weight: bold;
+    line-height: 37px;
+}
+.facilities-list li{
+    position: relative;
+}
+.facilities-list li::before{
+    position: absolute  ;
+    content: '';
+    width: 7px;
+    height: 7px;
+    top: 13px;
+    left: -19px;
+
+    background-color: black;
+    transform: rotate(45deg);
+}
+.prices-table{
+    width: 460px;
+    padding-top: 15px;
+}
+.prices-table h3{
+    margin: 0;
+    margin-bottom: 30px;
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+.prices-table table{
+    width: 460px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+.prices-table td{
+    width: 230px;
+    padding: 11px;
+    border: 2px solid grey;
+    font-size: 14px;
+    font-weight: bold;
+    }
+.prices-table td:nth-child(2n){
+    text-align: center;
+}
+.about-us-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-us-wrap h3{
+    margin: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.about-us-wrap p{
+    width: 380px;
+    margin: 0;
+    line-height: 24px;
+    font-weight: bold;
+}
+.about-us-wrap p:nth-of-type(2n){
+    margin-right: 80px;
+}
+.main-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+
+    background-color: grey;
+    background-image: url(../Img/Price/Layer\ 23.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-footer-container{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+
+    color: white;
+    
+
+}
+address{
+    width: 310px;
+    margin-right: 90px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+address p{
+    margin-bottom: 15px;
+}
+address a{
+    font: inherit;
+    
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+address .tele-number{
+    text-decoration: none;
+}
+.social-wrap{
+    width: 140px;
+    text-align: center;
+}
+.social-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.social-list li{
+ margin-right: 5px;
+ margin-bottom: 10px;
+}
+.social-item a{
+    width: 43px;
+    height: 43px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+.copyright-wrap{
+    width: 140px;
+    margin-left: auto;
+    text-align: center;
+}
+.copyright-wrap a{
+    display: flex;
+    width: 140px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+
+
+    font: inherit;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}

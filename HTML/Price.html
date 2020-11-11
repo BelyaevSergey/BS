@@ -4,154 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/ShopPage.css">
-    <title>ShopPage</title>
+    <link rel="stylesheet" href="../CSS/Price.css">
+    <title>Price</title>
 </head>
 
 <body>
     <header class="main-header">
         <div class="main-header-container">
-            <img src="../Icons/Shop/logo-small.svg" alt="Логотип сайта" width="111px" height="24px">
             <nav class="main-navigation">
+                <img src="../Icons/Price/logo-small.svg" alt="Логотип сайта" class="main-logo" width="112px"
+                    height="24px">
                 <ul class="main-navigation-list">
-                    <li class="main-navigation-item"><a href=""><span>Информация</span></a></li>
-                    <li class="main-navigation-item"><a href=""><span>Новости</span></a></li>
-                    <li class="main-navigation-item"><a href=""><span>Прайс-лист</span></a></li>
-                    <li class="main-navigation-item"><a href=""><span class="active-menu">Магазин</span></a></li>
-                    <li class="main-navigation-item"><a href=""><span>Контакты</span></a></li>
+                    <li class="main-navigation-item"><a href="#">Информация</a></li>
+                    <li class="main-navigation-item"><a href="#">Новости</a></li>
+                    <li class="main-navigation-item"><a href="#">Прайс-лист</a></li>
+                    <li class="main-navigation-item"><a href="#">Магазин</a></li>
+                    <li class="main-navigation-item"><a href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="login-menu-list">
-                <li class="login-menu-item user-space visually-hidden"><a href="">Личный кабинет</a></li>
-                <li class="login-menu-item enter"><a href="">Вход</a></li>
-            </ul>
+            <div class="login-menu-wrap">
+                <ul class="login-menu-list">
+                    <li class="login-menu-item visually-hidden"><a href="">Личный кабинет</a></li>
+                    <li class="login-menu-item enter"><a href="">Вход</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <div class="main-container">
-            <h1>Средства для ухода</h1>
-            <ul class="mini-navigation-list">
-                <li class="mini-navigation-item"><a href="">Главная</a></li>
-                <li class="mini-navigation-item"><a href="">Магазин</a></li>
-                <li class="mini-navigation-item">Средства для ухода</li>
+            <h1>Прайс-лист</h1>
+            <ul class="navigation-tree-list">
+                <li class="navigation-tree-item"><a href="#">Главная</a></li>
+                <li class="navigation-tree-item"><a href="#">Прайс-лист</a></li>
             </ul>
 
-            <section class="main-shop-content">
-                <div class="check-radio-wrap">
-
-
-                    <form action="#" class="company-category-list">
-                        <h2>Производители:</h2>
-                        <div class="company">
-                            <label for="baxter">
-                                <input type="checkbox" name="company" id="baxter" class="visually-hidden"> <span
-                                    class="checkbox-indicator"></span>
-                                Baxter of California
-                            </label>
-                            <label for="natty">
-                                <input type="checkbox" name="company" id="natty" class="visually-hidden"> <span
-                                    class="checkbox-indicator"></span>
-                                Mr Natty
-                            </label>
-                            <label for="suavecito">
-                                <input type="checkbox" name="company" id="suavecito" class="visually-hidden"><span
-                                    class="checkbox-indicator"></span>Suavecito
-                            </label>
-                            <label for="malin">
-                                <input type="checkbox" name="company" id="malin" class="visually-hidden"><span
-                                    class="checkbox-indicator"></span>Malin+Goetz
-                            </label>
-                            <label for="murray">
-                                <input type="checkbox" name="company" id="murray" class="visually-hidden"><span
-                                    class="checkbox-indicator"></span>Murray’s
-                            </label>
-                            <label for="crew">
-                                <input type="checkbox" name="company" id="crew" class="visually-hidden"><span
-                                    class="checkbox-indicator"></span>American Crew
-                            </label>
-                        </div>
-
-                        <h2>Группы товаров:</h2>
-                        <div class="category">
-                            <label for="raze">
-                                <input type="radio" name="category" id="raze" class="visually-hidden"><span
-                                    class="radio-indicator"></span>Бритвенные <br> принадлежности
-                            </label>
-                            <label for="facilities">
-                                <input type="radio" name="category" id="facilities" class="visually-hidden"><span
-                                    class="radio-indicator"></span>
-                                Средства для ухода
-                            </label>
-                            <label for="accessories">
-                                <input type="radio" name="category" id="accessories" class="visually-hidden"><span
-                                    class="radio-indicator"></span>
-                                Аксессуары
-                            </label>
-                        </div>
-                        <button type="submit" class="sort-button">Показать</button>
-                    </form>
+            <section class="main-content">
+                <h2 class="big-headling">Истинно мужская классика</h2>
+                <div class="items-and-prices-wrap">
+                    <article class="facilities">
+                        <h3>Мы используем только лучшие средства:</h3>
+                        <ul class="facilities-list">
+                            <li class="facilities-item">Baxter of California</li>
+                            <li class="facilities-item">Mr Natty</li>
+                            <li class="facilities-item">Suavecito</li>
+                            <li class="facilities-item">Malin+Goetz</li>
+                        </ul>
+                    </article>
+                    <article class="prices-table">
+                        <h3>Цены на услуги <br> наших мастеров:</h3>
+                        <table>
+                            <tr>
+                                <td>Стрижка</td>
+                                <td>1 500 &#8381</td>
+                            </tr>
+                            <tr>
+                                <td>Стрижка бороды</td>
+                                <td>500 &#8381</td>
+                            </tr>
+                            <tr>
+                                <td>Накрутка усов</td>
+                                <td>350 &#8381</td>
+                            </tr>
+                        </table>
+                    </article>
                 </div>
-
-                <div class="product-list-wrap">
-                    <ul class="product-card-list">
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/1.jpg" alt="Набор для путешествий" width="220px" height="165px">
-                            <p>Набор для путешествий <br> «Baxter of California»</p>
-                            <div class="button-wrap">
-                                <span>2 900 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/2.jpg" alt="Большой синий флакон с дозатором" width="220px"
-                                height="165px">
-                            <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
-                            <div class="button-wrap">
-                                <span>750 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/3.jpg" alt="Открытая банка с гелем для волос темного цвета"
-                                width="220px" height="165px">
-                            <p>Гель для волос <br> «SUAVECITO»</p>
-                            <div class="button-wrap">
-                                <span>290 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/4.jpg" alt="Большая круглая банка" width="220px" height="165px">
-                            <p>Глина для укладки волос <br> «American crew»</p>
-                            <div class="button-wrap">
-                                <span>500 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/5.jpg" alt="Коричневый тюбик" width="220px" height="165px">
-                            <p>Гель для волос <br> «AMERICAN CREW»</p>
-                            <div class="button-wrap">
-                                <span>300 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                        <li class="product-card-item">
-                            <img src="../Img/Shop/6.jpg" alt="Бритвенные принадлежности" width="220px" height="165px">
-                            <p>Набор для бритья <br> «Baxter of California»</p>
-                            <div class="button-wrap">
-                                <span>3 900 &#8381</span>
-                                <button type="button">Купить</button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="page-buttons-list">
-                        <li><button class="page-button">1</button></li>
-                        <li><button class="page-button active">2</button></li>
-                        <li><button class="page-button">3</button></li>
-                        <li><button class="page-button">4</button></li>
-                    </ul>
-                </div>
+                <article class="about-us-wrap">
+                    <h3>Несколько слов о нас:</h3>
+                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для
+                        нас
+                        - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем
+                        качество.</p>
+                    <p>Наша мастерская расположена в центре города, поэтому
+                        сделать стильную стрижку можно в любое время, даже в
+                        обеденный перерыв. Здесь вы можете погрузиться в удобную
+                        для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                </article>
 
             </section>
         </div>
@@ -159,14 +86,14 @@
     <footer class="main-footer">
         <div class="main-footer-container">
             <address>
-                <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
-                <a href="">КАК НАС НАЙТИ?</a> <br>
-                <a href="tel:74956660266">ТЕЛЕФОН: +7 (495) 666-02-66</a>
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ» <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <a href="#">КАК НАС НАЙТИ?</a> <br>
+                <a href="tel:+4956660266" class="tele-number">ТЕЛЕФОН: +7 (495) 666-02-66</a>
             </address>
             <div class="social-wrap">
-                <p>давайте дружить!</p>
+                <p>Давайте дружить!</p>
                 <ul class="social-list">
-                    <li><a href="#" class="social-item" aria-label="Вконтакте"><svg width="27px" height="15px"
+                    <li class="social-item"><a href="" aria-label="Вконтакте"><svg width="27px" height="15px"
                                 viewBox="0 0 27 15" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
@@ -186,7 +113,7 @@
                                     </g>
                                 </g>
                             </svg></a></li>
-                    <li><a href="#" class="social-item" aria-label="Фейсбук"><svg width="11px" height="22px"
+                    <li class="social-item"><a href="" aria-label="Фейсбук"><svg width="11px" height="22px"
                                 viewBox="0 0 11 22" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
@@ -206,7 +133,7 @@
                                     </g>
                                 </g>
                             </svg></a></li>
-                    <li><a href="#" class="social-item" aria-label="Инстаграмм"><svg width="20px" height="20px"
+                    <li class="social-item"><a href="" aria-label="Инстаграмм"><svg width="20px" height="20px"
                                 viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
@@ -228,12 +155,13 @@
                             </svg></a></li>
                 </ul>
             </div>
-            <div class="copyright">
+            <div class="copyright-wrap">
                 <p>Разработано:</p>
-                <a href="#">HTML Academy</a>
+                <a href="">html academy</a>
             </div>
         </div>
     </footer>
+
 
 </body>
 

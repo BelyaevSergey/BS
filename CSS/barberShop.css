@@ -1,15 +1,15 @@
 @font-face{
 font-family: "PT Sans Narrow";
 src: url(../Barber/fonts/web/ptsansnarrow.woff2) format("woff2"),
-        url(../Barber/fonts/web/ptsansnarrow.woff) format("woff2"),
+        url(../Barber/fonts/web/ptsansnarrow.woff) format("woff"),
         local('PT Sans Narrow');
 
 font-weight: normal;
 }
 @font-face{
 font-family: "PT Sans Narrow";
-src: url(../Barber/fonts/web/ptsansnarrowbold.woff2) format("woff2"),
-        url(../Barber/fonts/web/ptsansnarrowbold.woff) format("woff2"),
+src: url(../Fonts/web/ptsansnarrowbold.woff2) format("woff2"),
+        url(../Fonts/web/ptsansnarrowbold.woff) format("woff"),
         local('PT Sans Narrow');
 font-weight:bold;
 }
@@ -27,10 +27,11 @@ body{
     color: white;
 
     background-color: black;
-    background-image: url(./Img/Index/backgroundBody.png);
+    background-image: url(../Img/Index/backgroundBody.png);
     background-position: 0 0;
     background-repeat: no-repeat;
 }
+
 .visually-hidden{
     position: absolute;
     margin: -1px;
@@ -60,6 +61,10 @@ a{  font:inherit;
     text-transform: uppercase;
     color: white;
 }
+.button:hover,
+.button:focus{
+    background-color: rgb(145, 73, 40);
+}
                                                         /* header */
 .main-header{
     margin: 0 auto;
@@ -87,11 +92,21 @@ a{  font:inherit;
 }
 .main-navigation-item a{
     display: block;
-    padding: 30px 20px;
+    padding: 0px 20px;
     letter-spacing: 0.1px;
     font-size: 16px;
     font: inherit;
+   
 
+}
+.main-navigation-item a:hover{
+ background-color: rgb(87, 95, 104);
+ 
+}
+.main-navigation-item a:focus{
+    outline-color: rgb(194, 208, 223);
+    background-color: rgb(87, 95, 104);
+    
 }
 
 .login-menu{
@@ -108,17 +123,39 @@ a{  font:inherit;
 }
 .enter::before{
     position: absolute;
-    left: -10px;
-    content: url(./Icons/Index/login.svg);
+    left: 25px;
+    content: url(../Icons/Index/login.svg);
     opacity: 30%;
    
 }
 .login-menu-item button{
-    padding: 30px 20px;
+    width: 107px;
+    padding: 25px 0px;
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.login-menu-item button:hover,
+.login-menu-item button:focus{
+    outline: none;
+    background-color: rgb(87, 95, 104);
 }
 .enter:hover::before{
 opacity: 100%;
 cursor: pointer;
+}
+.enter:focus::before{
+    opacity: 100%;
+    }
+.main-navigation-item span{
+    display: flex;
+    align-items: center;
+    height:68px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.selected span{
+
+    border-bottom:2px solid white;
+
 }
                                                         /* Advantages */
 .wrap-logo-advantages{
@@ -200,8 +237,8 @@ text-align: center;
     margin-bottom: 36px;
     padding-top: 20px;
     background-color: khaki;
-    background-image: url(./Img/Index/string.svg),
-    url(./Img/Index/backgroundNewsBlock.jpg);
+    background-image: url(../Img/Index/string.svg),
+    url(../Img/Index/backNews.png);
     background-position:center, 0 0;
     background-repeat: no-repeat, repeat;
 
@@ -293,8 +330,8 @@ padding-top: 20px;
 padding-bottom: 50px;
 margin-bottom: 65px;
 background-color: khaki;
-background-image: url(./Img/Index/string.svg),
-url(./Img/Index/backgroundNewsBlock.jpg);
+background-image: url(../Img/Index/string.svg),
+url(../Img/Index/backNews.png);
 background-position:center, 0 0;
 background-repeat: no-repeat, repeat;
 color: black;
@@ -378,7 +415,11 @@ font-size: 30px;
 .input-wrap{
     position: relative;
 }
-form label{
+.input-wrap input:hover,
+.input-wrap input:focus{
+border-color: sienna;
+}
+.appointment form label{
     position: absolute;
     top: -8px;
     left: 16px;
@@ -396,11 +437,15 @@ form label{
     border: none;
     text-transform: uppercase;
 }
+.form-button:hover,
+.form-button:focus{
+    background-color: rgb(145, 73, 40);
+}
 
-
+                                                                        /* footer */
 .main-footer{
  background-color: dimgray;
- background-image: url(./Img/Index/backGroundFooter.jpg);
+ background-image: url(../Img/Index/backGroundFooter.jpg);
  background-position: 0 0;
  background-repeat: repeat;
 }
@@ -415,7 +460,7 @@ form label{
     font-size: 14px;
     line-height: 24px;
 }
-.conacts-footer{
+.contacts-footer{
     width: 307px;
     margin-right: 95px;
 }
@@ -468,6 +513,141 @@ form label{
     font-size: 14px;
     padding: 15px 0;
 }
+.footer-copyright a:hover,
+.footer-copyright a:focus{
+    background-color: white;
+    color: black;
+}
 .disable{
     display: none;
+}
+                                                    /* popup-login */
+.login-popup{
+position: fixed;
+top:50%;
+left: 50%;
+padding:0px 80px;
+padding-top: 45px;
+padding-bottom: 59px;
+margin-top: -190px;
+margin-left: -230px;
+width: 460px;
+height: 385px;
+box-sizing: border-box;
+
+background-color: wheat;
+background-image: url(../Img/Index/backNews.png);
+background-position: 0 0;
+background-repeat: repeat;
+
+color: black;
+text-align: center;
+
+display: none;
+}
+.login-popup h2{
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "PT Sans Narrow";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: left;
+}
+.login-popup p{
+    margin: 0;
+    margin-bottom: 11px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    
+}
+
+.user-input{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 43px;
+    box-sizing: border-box;
+    padding-left: 17px;
+    padding-right: 30px;
+    
+
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0);
+ 
+ 
+}
+.user-input::placeholder{
+    color: black;
+    font-family: "PT Sans Narrow";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input#login{
+    margin-bottom: 9px;
+    background-image: url(../Icons/Index/user-login.svg);
+    background-repeat: no-repeat;
+    background-position:270px 15px;
+}
+input#password{
+    margin-bottom: 15px;
+    background-image: url(../Icons/Index/lock-login.svg);
+    background-repeat: no-repeat;
+    background-position:270px 15px;
+}
+.checkbox-wrap{
+    display: flex;
+    margin-bottom: 19px;
+    justify-content: space-between;
+    position: relative;
+}
+.checkbox-wrap label{
+    display: flex;
+}
+.visual-checkbox{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+
+    border: 2px solid black;
+
+}
+.checkbox-wrap input:checked +.visual-checkbox{
+    background-image: url(../Icons/Index/cross-small.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.checkbox-wrap a{
+    color:black;
+    text-decoration: underline;
+}
+.login-popup form button{
+    width: 100%;
+    height: 43px;
+
+    background-color: black;
+    font: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+
+}
+.login-close-button{
+    position: absolute;
+    top:0px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../Icons/Index/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="barberShop.css">
+    <link rel="stylesheet" href="../CSS/barberShop.css">
     <title>Барбершоп Бородинский</title>
 </head>
 
@@ -12,14 +12,15 @@
     <header class="main-header">
         <nav class="main-navigation">
             <ul class="main-navigation-list">
-                <li class="main-navigation-item"><a href="#">Информация</a></li>
-                <li class="main-navigation-item"><a href="#">Новости</a></li>
-                <li class="main-navigation-item"><a href="#">Прайс-лист</a></li>
-                <li class="main-navigation-item"><a href="#">Магазин</a></li>
-                <li class="main-navigation-item"><a href="#">Контакты</a></li>
+                <li class="main-navigation-item"><a href="#"><span>Информация</span></a></li>
+                <li class="main-navigation-item selected"><a href="#"><span>Новости</span></a></li>
+                <li class="main-navigation-item"><a href="#"><span>Прайс-лист</span></a></li>
+                <li class="main-navigation-item"><a href="#"><span>Магазин</span></a></li>
+                <li class="main-navigation-item"><a href="#"><span>Контакты</span></a></li>
             </ul>
             <ul class="login-menu">
-                <li class="login-menu-item"><a href="#" class="button visually-hidden">Личный кабинет</a></li>
+                <li class="login-menu-item"><a href="#" class="button visually-hidden" tabindex="-1">Личный кабинет</a>
+                </li>
                 <li class="login-menu-item"><button type="button" class="button enter">Вход</button></li>
             </ul>
 
@@ -29,7 +30,7 @@
     <main>
         <h1 class="visually-hidden">Барбершоп Бородинский</h1>
         <div class="wrap-logo-advantages">
-            <div class="main-logo"><img src="./Img/Index/index-logo.png"
+            <div class="main-logo"><img src="../Img/Index/index-logo.png"
                     alt="Большой логотип сайта Барбершоп Бородинский" width="371px" height="153px"></div>
             <ul class="advantage-list">
                 <li>
@@ -75,7 +76,7 @@
                 <h2>Фотогалерея</h2>
                 <figure>
 
-                    <img src="./Img/Index/Foto.jpg" alt="Фото зала" class="foto-gallary" width="285px" height="164px">
+                    <img src="../Img/Index/Foto.jpg" alt="Фото зала" class="foto-gallary" width="285px" height="164px">
                 </figure>
                 <div class="buttons-wrap">
                     <button type="button" class="button">Назад</button>
@@ -130,11 +131,13 @@
     </main>
     <footer class="main-footer">
         <div class="main-footer-wrap">
-            <div class="conacts-footer">
+            <div class="contacts-footer">
                 <p>
-                    Барбершоп «бородинский» <br> адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8 <br> как нас
-                    найти?
-                    <br> телефон: +7 (495) 666-02-66
+                    Барбершоп «бородинский» <br>адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8 <br><a
+                        href="https://yandex.ru/maps/-/CCQ3yUb0-C" target="_blank">как
+                        нас
+                        найти?</a>
+                    <br><a href="84956660202">телефон: +7 (495) 666-02-66</a>
                 </p>
             </div>
             <div class="footer-social">
@@ -209,29 +212,30 @@
         </div>
     </footer>
 
-    <section class="login-popup disable">
+    <section class="login-popup">
         <h2>Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <form action="./dfdf" method="POST" class="popup-form">
             <div>
                 <label for="login" aria-label="Введите свой логин"></label>
-                <input type="text" placeholder="Логин" name="login" id="login">
+                <input type="text" placeholder="Логин" name="login" id="login" class="user-input">
             </div>
             <div>
                 <label for="password" aria-label="Введите свой пароль"></label>
-                <input type="text" name="password" id="password" placeholder="Пароль">
+                <input type="text" name="password" id="password" placeholder="Пароль" class="user-input">
             </div>
-            <div>
+            <div class="checkbox-wrap">
                 <label for="checkbox-popup">
-                    <input type="checkbox" name="checkox-popup" id="checkbox-popup">
+                    <input type="checkbox" name="checkox-popup" id="checkbox-popup" class="visually-hidden">
                     <div class="visual-checkbox"></div>
                     <p class="checkbox-text">Запомните меня</p>
                 </label>
+
+                <a href=".//">Я забыл пароль!</a>
             </div>
-            <a href=".//">Я забыл пароль!</a>
             <button type="submit">Войти</button>
         </form>
-        <button type="button" aria-label="Закрыть окно"></button>
+        <button type="button" aria-label="Закрыть окно" class="login-close-button"></button>
     </section>
 </body>
 
