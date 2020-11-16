@@ -417,6 +417,7 @@ font-size: 30px;
 }
 .input-wrap input:hover,
 .input-wrap input:focus{
+outline: none;
 border-color: sienna;
 }
 .appointment form label{
@@ -463,6 +464,9 @@ border-color: sienna;
 .contacts-footer{
     width: 307px;
     margin-right: 95px;
+}
+.contacts-footer a:hover{
+cursor: pointer;
 }
 .social-list{
     display: flex;
@@ -543,7 +547,7 @@ background-repeat: repeat;
 color: black;
 text-align: center;
 
-display: none;
+/* display: none; */
 }
 .login-popup h2{
     margin: 0;
@@ -576,7 +580,7 @@ display: none;
 
     border: 2px solid black;
     background-color: rgba(0, 0, 0, 0);
- 
+  
  
 }
 .user-input::placeholder{
@@ -586,6 +590,11 @@ display: none;
     line-height: 24px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.user-input:hover,
+.user-input:focus{
+outline: none;
+border-color: sienna;
 }
 input#login{
     margin-bottom: 9px;
@@ -627,6 +636,15 @@ input#password{
     color:black;
     text-decoration: underline;
 }
+.checkbox-wrap a:hover,
+.checkbox-wrap a:focus{
+    color: sienna;
+}
+.checkbox-wrap label:hover,
+.checkbox-wrap label:focus {
+    color: sienna;
+   
+}
 .login-popup form button{
     width: 100%;
     height: 43px;
@@ -638,6 +656,10 @@ input#password{
     color: white;
     border: none;
 
+}
+.login-popup form button:hover,
+.login-popup form button:focus{
+    background-color: sienna;
 }
 .login-close-button{
     position: absolute;

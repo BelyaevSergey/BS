@@ -89,9 +89,16 @@ a{
     font-size: 16px;
     font-weight: bold;
 }
+.main-navigation-list a:hover{
+    background-color: slategray;
+}
+.main-navigation-list a:focus{
+    outline-color: silver;
+}
 .main-navigation-list span{
     display: block;
-    padding: 25px 0px;
+    padding: 24px 0px;
+    border-bottom: 2px solid rgba(0,0,0,0);
 }
 .login-menu-list a{
     display: flex;
@@ -100,20 +107,36 @@ a{
     font-size: 16px;
     font-weight: bold;
 }
+
 header .active-menu {
    border-bottom: 2px solid white;
 }
 
-.enter{
+.enter a{
+    width: 109px;
     position: relative;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 55px;
 }
-.enter::before{
+.enter a::before{
     position: absolute;
     content: url(../Icons/Shop/login.svg);
-    top:30px;
-    left:-20px;
+    top:25px;
+    left:20px;
 
     opacity: 0.4;
+}
+.enter a:hover{
+    background-color: slategray;
+
+}
+.enter a:hover::before,
+.enter a:focus::before{
+    opacity: 100%;
+}
+.enter a:focus{
+    outline-color: cornsilk;
 }
                                                         /* main */
 main{
@@ -148,6 +171,9 @@ h1{
 }
 .mini-navigation-list a{
     color:black;
+}
+.mini-navigation-list a:hover{
+    color: sienna;
 }
 .mini-navigation-list li:last-child{
     padding-left: 5px;
@@ -193,6 +219,14 @@ h1{
   line-height: 37px;
   align-items: center;
 }
+.company label:hover,
+.company label:focus{
+    outline: none;
+    color: sienna;
+}
+.company input:focus + span+span{
+    color: sienna;
+}
 .checkbox-indicator{
     position: relative;
     display: flex;
@@ -234,19 +268,25 @@ h1{
 }
 .category label{
     display: flex;
-    justify-content: space-between;
     line-height: 32px;
 }
-.radio-indicator{
+.category label:hover{
+    outline: none;
+    color: sienna;
+}
+.category label .radio-indicator{
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
 
     border-radius: 50%;
     border: 2px solid black;
 }
 .category input:checked + .radio-indicator::before{
     position: absolute;
+    padding: 0;
+    margin: 0;
     top: 5px;
     right: 5px;
     display: flex;
@@ -255,6 +295,8 @@ h1{
     content: '';
     width: 10px;
     height: 10px;
+    margin-right: -2px;
+    margin-top: -2px;
 
     border-radius: 50%;
     background-color: black;
@@ -272,6 +314,10 @@ h1{
     color: white;
     border: none;
     background-color: black;
+}
+.sort-button:hover,
+.sort-button:focus{
+    background-color: sienna;
 }
 .product-list-wrap{
    
@@ -296,6 +342,10 @@ h1{
 
     box-shadow: 0px 0px 7.5px 0px rgba(0,1,1,0.2);
     background-color: white;
+}
+.product-card-item:hover,
+.product-card-item:focus{
+    box-shadow: 0px 0px 7.5px 3px rgba(0,1,1,0.2);
 }
 .product-card-item img{
     margin-bottom: 10px;
@@ -331,6 +381,10 @@ align-items: center;
     background-color: black;
 
 }
+.button-wrap button:hover,
+.button-wrap .sort-button:focus{
+background-color: sienna;
+}
 .page-buttons-list{
     display: flex;
     margin: 0;
@@ -349,14 +403,22 @@ align-items: center;
     color: white;
 
 }
+.page-button:hover,
+.page-button:focus{
+    background-color: sienna;
+}
 .active {
     background-color: white;
     color: black;
 }
+.active:hover,
+.active:focus{
+    background-color: white;
+}
 
 .main-footer{
     width: 1200px;
-    padding-top: 60px;
+    padding-top: 50px;
     margin: 0 auto;
 
     background-image: url(../Img/Shop/Layer\ 23.jpg);
@@ -366,20 +428,27 @@ align-items: center;
 .main-footer-container{
     width: 940px;
     margin: 0 auto;
+    padding-bottom: 44px;
     display: flex;
 }
 address{
     width: 307px;
-    margin-right: 103px;
+    margin-right: 94px;
+    line-height: 23px;
 }
 address p{
+    margin: 0;
+
     font: inherit;
     font-weight: bold;
+    font-size: 14px;
     font-style: normal;
     color: white;
+    
 }
 address a{
     font: inherit;
+    font-size: 14px;
     font-style: normal;
 }
 address a:first-of-type{
@@ -390,6 +459,9 @@ address a:first-of-type{
 }
 
 .social-wrap p{
+    margin: 0;
+    margin-bottom: 15px;
+
     font: inherit;
     font-weight: bold;
     color: white;
@@ -414,6 +486,17 @@ address a:first-of-type{
     height: 43px;
     justify-content: center;
     align-items: center;
+
+    background-color: black;
+}
+.social-wrap a:hover,
+.social-wrap a:focus{
+    background-color: white;
+} 
+.social-wrap a:hover path,
+.social-wrap a:focus path{
+    fill:black;
+   
 }
 
 .copyright{
@@ -429,7 +512,17 @@ address a:first-of-type{
 
     background-color: black;
 }
+.copyright a:hover,
+.copyright a:focus{
+    background-color:white;
+    color: black;
+}
 .copyright p{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 15px;
+
+        text-align: center;
         color: white;
 }
 
