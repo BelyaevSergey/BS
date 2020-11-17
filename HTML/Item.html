@@ -21,8 +21,8 @@
                 <li class="navigation-menu-item"><a href="#">Контакты</a></li>
             </ul>
             <ul class="login-list">
-                <li class="login-item visually-hidden"><a href="#">Личный кабинет</a></li>
-                <li class="login-item"><a href="#">Вход</a></li>
+                <li class="login-item visually-hidden"><a tabindex="-1" href="#">Личный кабинет</a></li>
+                <li class="login-item"><a class='enter' href="#">Вход</a></li>
             </ul>
         </nav>
     </header>
@@ -34,16 +34,28 @@
                     <li class="shop-nav-item"><a href="">Главная</a></li>
                     <li class="shop-nav-item"><a href="">Магазин</a></li>
                     <li class="shop-nav-item"><a href="">Средства для ухода</a></li>
-                    <li class="shop-nav-item"><a href="">набор для путешествий «Baxter of California»</a></li>
+                    <li class="shop-nav-item"><a>набор для путешествий «Baxter of California»</a></li>
                 </ul>
             </nav>
             <div class="content-main-wrap">
                 <figure>
-                    <img src="../Img/Item/1.jpg" alt="Крупное фото набора для ухода" width="460px" height="498px">
-                    <img src="../Img/Item/2.jpg" alt="Небольшое фото набора с пузырками на переднем плане" width="140"
-                        height="149px">
-                    <img src="../Img/Item/3.jpg" alt="Фото косметички" width="140" height="149px">
-                    <img src="../Img/Item/4.jpg" alt="Уменьшенный вариант увеличенного фото" width="140" height="149px">
+                    <img src="../Img/Item/1.jpg" alt="Крупное фото набора для ухода" class="big-foto" width="460px"
+                        height="498px">
+                    <button type="button">
+                        <img src="../Img/Item/2.jpg" alt="Небольшое фото набора с пузырками на переднем плане"
+                            class="small-foto" width="140" height="149px">
+                    </button>
+
+                    <button type="button">
+                        <img src="../Img/Item/3.jpg" alt="Фото косметички" class="small-foto" width="140"
+                            height="149px">
+                    </button>
+
+                    <button type="button">
+                        <img src="../Img/Item/4.jpg" alt="Уменьшенный вариант увеличенного фото" class="small-foto"
+                            width="140" height="149px">
+                    </button>
+
                 </figure>
                 <div class="text-main-wrap">
                     <div class="exist"><span class="stock">Есть в наличии</span><span class="article">Артикул:

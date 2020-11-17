@@ -454,6 +454,7 @@ border-color: sienna;
     width: 940px;
     margin: 0 auto;
     padding-top: 45px;
+    padding-bottom: 44px;
     display: flex;
     
 }
@@ -464,6 +465,9 @@ border-color: sienna;
 .contacts-footer{
     width: 307px;
     margin-right: 95px;
+}
+.contacts-footer p{
+    margin: 0;
 }
 .contacts-footer a:hover{
 cursor: pointer;
@@ -547,7 +551,7 @@ background-repeat: repeat;
 color: black;
 text-align: center;
 
-/* display: none; */
+display: none;
 }
 .login-popup h2{
     margin: 0;
