@@ -40,6 +40,7 @@ a{
     clip: rect(0 0 0 0 );
     overflow: hidden;
 }
+                                                            /* header */
 header{
 width: 1200px;
 margin: 0 auto;
@@ -66,13 +67,21 @@ background-color: black;
 }
 .main-navigation-list a{
     display:block;
-    padding: 25px 20px;
+    padding: 0px 20px;
 
     font: inherit;
     letter-spacing: 0.1px;
     font-size: 16px;
     font-weight: bold;
     color: white;
+}
+.main-navigation-list span{
+    display: block;
+    padding: 24px 0px;
+    border-bottom: 2px solid rgba(0, 0,0, 0);
+}
+.main-navigation-list .active-menu-item{
+    border-bottom: 2px solid rgb(255, 255, 255,1);
 }
 .main-navigation-list a:hover,
 .main-navigation-list a:focus{

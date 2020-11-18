@@ -54,8 +54,6 @@ body{
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-
-
 }
 .login-menu-wrap{
     max-width: 230px;
@@ -75,7 +73,7 @@ body{
 }
 .main-navigation-list a{
     display: block;
-    padding: 25px 20px;
+    padding: 0px 20px;
 
 
     text-decoration: none;
@@ -83,6 +81,19 @@ body{
     font-size: 16px;
     font-weight: bold;
     color: white;
+}
+.main-navigation-list span{
+    display: block;
+    padding: 24px 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+.main-navigation-list .active-menu-item{
+    border-bottom: 2px solid rgba(255,255,255, 1);
+}
+.main-navigation-list a:hover,
+.main-navigation-list a:focus{
+    outline-color: rosybrown;
+    background-color: silver;
 }
 .login-menu-list{
     margin: 0;
@@ -94,6 +105,7 @@ body{
     
 
 }
+
 .login-menu-list a{
     display: block;
     padding: 25px 20px;
@@ -106,16 +118,30 @@ body{
     letter-spacing: 0.1px;
     color: white;
 }
-.enter{
+.login-menu-list a:hover,
+.login-menu-list a:focus{
+    outline-color: silver;
+    background-color: silver;
+}
+.login-menu-list .enter{
     position: relative;
+    padding-left: 30px;
 }
 .enter::before{
     position: absolute;
     content: url(../Icons/Price/login.svg);
     top: 30px;
-    left: -10px;
+    left: 0px;
     opacity: 0.3;
 }
+.enter:hover::before,
+.enter:focus::before{
+    opacity: 100%;
+}
+                                                               /* main */
+
+
+                                                               
 main{
     width: 1200px;
     margin: 0 auto;
@@ -123,7 +149,7 @@ main{
     padding-bottom: 75px;
 
     background-color: lemonchiffon;
-    background-image: url(../Img/Price/Layer\ 24\ copy.jpg);
+    background-image: url(../Img/Item/Layer\ 24\ copy.png);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -173,6 +199,13 @@ h1{
     font-weight: bold;
     color: black;
     text-decoration: none;
+}
+.navigation-tree-list li:first-child a:hover,
+.navigation-tree-list li:first-child a:focus{
+    color: sienna;
+}
+.navigation-tree-list li:last-child a{
+    color: slategray;
 }
 .big-headling{
     position: relative;
@@ -287,13 +320,19 @@ h1{
 .about-us-wrap p:nth-of-type(2n){
     margin-right: 80px;
 }
+                                                    /* footer */
+
+
+
+
 .main-footer{
     width: 1200px;
     margin: 0 auto;
     padding-top: 45px;
+    padding-bottom: 42px;
 
     background-color: grey;
-    background-image: url(../Img/Price/Layer\ 23.jpg);
+    background-image: url(../Img/Price/backGroundFooter.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -302,8 +341,13 @@ h1{
     margin: 0 auto;
     display: flex;
 
+    font: inherit;
     color: white;
-    
+    font-family: "PT Sans Narrow", sans-serif;
+    font:inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 23px;
 
 }
 address{
@@ -312,9 +356,11 @@ address{
     font-style: normal;
     font-size: 14px;
     font-weight: bold;
+    line-height: 23px;
 }
 address p{
-    margin-bottom: 15px;
+    margin:0;
+
 }
 address a{
     font: inherit;
@@ -322,14 +368,14 @@ address a{
     color: white;
     font-size: 14px;
     font-weight: bold;
-}
-address .tele-number{
     text-decoration: none;
 }
+
 .social-wrap{
     width: 140px;
     text-align: center;
 }
+
 .social-list{
     display: flex;
     margin: 0;
@@ -352,6 +398,14 @@ address .tele-number{
 
     background-color: black;
 }
+.social-item a:hover path,
+.social-item a:focus path{
+    fill:black;
+}
+.social-item a:hover,
+.social-item a:focus{
+    background-color: white;
+}
 .copyright-wrap{
     width: 140px;
     margin-left: auto;
@@ -369,4 +423,9 @@ address .tele-number{
     text-decoration: none;
     background-color: black;
     color: white;
+}
+.copyright-wrap a:hover,
+.copyright-wrap a:focus{
+    background-color: white;
+    color: black;
 }
